@@ -220,10 +220,10 @@ stages:
     variables:
     - group: 'Release'
     strategy:
-      runOnce:
+      runOnce: 
         deploy:
           steps:
-          - download: current
+          - download: current 
             artifact: drop
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
